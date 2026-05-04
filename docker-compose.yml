@@ -4,8 +4,8 @@ services:
     image: madrasglocal:latest
     container_name: madrasglocal-web
     restart: always
-    expose:
-      - "80"
+    ports:
+      - "8080:80"
     networks:
       - npm-net
 
