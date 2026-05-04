@@ -1,0 +1,14 @@
+services:
+  web:
+    build: .
+    image: madrasglocal:latest
+    container_name: madrasglocal-web
+    restart: always
+    ports:
+      - "80:80"
+    networks:
+      - npm-net
+
+networks:
+  npm-net:
+    external: true
